@@ -1,5 +1,7 @@
 # @akong/chat-input
 
+> ← 回 [akong design system](https://yarnovo.github.io/akong-core/) 总站
+
 akong ChatInput · 类微信 / iMessage / WhatsApp 聊天输入框 · 跨端 (Web + React Native)
 
 ## Demo
