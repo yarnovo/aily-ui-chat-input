@@ -1,14 +1,13 @@
 /* akong-chat-input · Web 样式 · 用 var(--ak-*) 接 @akong/tokens */
 
+/* normal flow · 在 ChatLayout footer 里用时 flex 自然贴底
+ * 单独用 (不用 ChatLayout) 时 · 用方自己包 wrapper 加 sticky / fixed
+ * 不再 position: sticky 防双重 sticky 嵌套撞 layout */
 .ak-chat-input {
-  position: sticky;
-  bottom: 0;
-  z-index: 10;
   display: flex;
   align-items: flex-end;
   gap: var(--ak-space-2);
   padding: var(--ak-space-2) var(--ak-space-3);
-  padding-bottom: calc(var(--ak-space-2) + env(safe-area-inset-bottom, 0px));
   background: var(--ak-bg-elevated);
   border-top: 1px solid var(--ak-border);
   font-family: var(--ak-font-sans);
